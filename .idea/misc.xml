@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/server-verificationcode/pom.xml" />
+        <option value="$PROJECT_DIR$/internal-commer/pom.xml" />
       </list>
     </option>
   </component>
