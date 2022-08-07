@@ -7,15 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="internal-commer" />
+        <module name="api-passenger" />
         <module name="server-verificationcode" />
         <module name="apipassenger" />
+        <module name="commerinternal" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="internal-commer" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-passenger" options="-parameters" />
       <module name="apipassenger" options="-parameters" />
+      <module name="commerinternal" options="-parameters" />
       <module name="internal-commer" options="" />
       <module name="server-verificationcode" options="-parameters" />
     </option>

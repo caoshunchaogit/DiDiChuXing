@@ -1,7 +1,10 @@
 package com.csc.apipassenger.service;
 
+import com.csc.apipassenger.openfeign.NumberVerificationServeice;
+import com.csc.dto.ResponseResult;
 import jdk.nashorn.internal.runtime.JSONFunctions;
 import net.sf.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,14 +16,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class VeificationService {
 
+    @Autowired
+    private NumberVerificationServeice numberVerificationServeice;
+
     // 接收手机号 调用验证码服务,获取验证码 返回 验证码
-    public String generatorCode(String passengerPhone){
+    public ResponseResult generatorCode(String passengerPhone){
         System.out.println("调用验证码服务,获取验证码");
+        ResponseResult responseResult = numberVerificationServeice.numberCode(6);
+        System.out.println("调用远程返回的数字验证码:" + responseResult.getData());
         System.out.println("存入Redis中");
-        JSONObject json = new JSONObject();
-        json.put("code","111111");
-        json.put("message","success");
-        return json.toString();
+        return responseResult;
     }
 
 }

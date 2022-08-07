@@ -32,8 +32,8 @@
         <!--返回类的服务-->
         <dependency>
             <groupId>com.csc</groupId>
-            <artifactId>internal-commer</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>commer-internal</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

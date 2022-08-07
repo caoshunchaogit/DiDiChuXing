@@ -2,24 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80d71853-a63a-4fbd-82da-46635db514cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/openfeign/NumberVerificationServeice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/ApiPassengerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/controller/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/controller/VerificationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/openfeign/NumberVerificationServeice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/request/VeificationCodeDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/service/VeificationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commer-internal/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/dto/ResponseResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/internalcommer/CommerStatusEeum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/response/NumberCodeResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/ApiPassengerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/controller/VerificationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/request/VeificationCodeDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/service/VeificationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/ApiPassengerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/ApiPassengerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/src/main/java/com/csc/InternalCommerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/src/main/java/com/csc/dto/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/dto/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/src/main/java/com/csc/internalcommer/CommerStatusEeum.java" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/internalcommer/CommerStatusEeum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/src/main/java/com/csc/response/NumberCodeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/response/NumberCodeResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/src/test/java/com/csc/InternalCommerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/target/classes/com/csc/InternalCommerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/target/classes/com/csc/dto/ResponseResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/target/classes/com/csc/internalcommer/CommerStatusEeum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/target/classes/com/csc/response/NumberCodeResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commer/target/test-classes/com/csc/InternalCommerApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-verificationcode/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-verificationcode/src/test/java/com/csc/ServerVerificationcodeApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-verificationcode/target/test-classes/com/csc/ServerVerificationcodeApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-verificationcode/target/test-classes/META-INF/server-verificationcode.kotlin_module" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api-passenger/target/" />
     <ignored path="$PROJECT_DIR$/server-verificationcode/target/" />
     <ignored path="$PROJECT_DIR$/internal-commer/target/" />
+    <ignored path="$PROJECT_DIR$/commer-internal/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,45 +72,15 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server-verificationcode/src/main/java/com/csc/ServerVerificationcodeApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="192">
+              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server-verificationcode/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="n#build#0;n#project#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-passenger/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -107,21 +105,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java" />
         <option value="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/request/VeificationCodeDTO.java" />
-        <option value="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java" />
         <option value="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/ApiPassengerApplication.java" />
         <option value="$PROJECT_DIR$/server-verificationcode/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/internal-commer/src/main/java/com/csc/internalcommer/CommerStatusEeum.java" />
         <option value="$PROJECT_DIR$/internal-commer/src/main/java/com/csc/dto/ResponseResult.java" />
         <option value="$PROJECT_DIR$/internal-commer/pom.xml" />
         <option value="$PROJECT_DIR$/internal-commer/src/main/java/com/csc/response/NumberCodeResponse.java" />
         <option value="$PROJECT_DIR$/server-verificationcode/src/main/java/com/csc/controller/NumberCodeController.java" />
-        <option value="$PROJECT_DIR$/api-passenger/pom.xml" />
         <option value="$PROJECT_DIR$/server-verificationcode/src/main/java/com/csc/ServerVerificationcodeApplication.java" />
-        <option value="$PROJECT_DIR$/server-verificationcode/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/commer-internal/pom.xml" />
+        <option value="$PROJECT_DIR$/server-verificationcode/pom.xml" />
+        <option value="$PROJECT_DIR$/api-passenger/pom.xml" />
+        <option value="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/openfeign/NumberVerificationServeice.java" />
+        <option value="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/ApiPassengerApplication.java" />
+        <option value="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java" />
+        <option value="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java" />
       </list>
     </option>
   </component>
@@ -146,30 +146,6 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="api-passenger" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="api-passenger" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="api-passenger" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="server-verificationcode" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="server-verificationcode" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="server-verificationcode" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -193,84 +169,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="api-passenger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="api-passenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="api-passenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="api-passenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="api-passenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apipassenger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="api-passenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apipassenger" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="api-passenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apipassenger" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="api-passenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apipassenger" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="server-verificationcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeiDiChuXing" type="462c0819:PsiDirectoryNode" />
-              <item name="server-verificationcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DiDiChuXing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiDiChuXing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,7 +188,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/commer-internal/src/main/java/com/csc" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -303,6 +203,11 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\DiDiChuXing\commer-internal\src\main\java\com\csc" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -315,7 +220,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServerVerificationcodeApplication">
+  <component name="RunManager" selected="Spring Boot.ApiPassengerApplication (1)">
+    <configuration name="ApiPassengerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="api-passenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csc.apipassenger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.csc.apipassenger.ApiPassengerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="apipassenger" />
       <extension name="coverage">
@@ -347,9 +265,11 @@
       <item itemvalue="Spring Boot.InternalCommerApplication" />
       <item itemvalue="Spring Boot.ServerVerificationcodeApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
+      <item itemvalue="Spring Boot.ApiPassengerApplication (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ApiPassengerApplication (1)" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
       </list>
     </recent_temporary>
@@ -366,6 +286,7 @@
       <updated>1659751128128</updated>
       <workItem from="1659751133781" duration="11748000" />
       <workItem from="1659837831924" duration="2298000" />
+      <workItem from="1659872257562" duration="906000" />
     </task>
     <task id="LOCAL-00001" summary="创建飞滴出行">
       <created>1659751211105</created>
@@ -406,12 +327,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14046000" />
+    <option name="totallyTimeSpent" value="14952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1048" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25479743" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -421,8 +342,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3253796" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.046637744" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3249453" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.046637744" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -434,10 +355,12 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.56073755" />
+      <window_info anchor="right" id="Word Book" side_tool="true" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.29211086" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.29211086" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32959402" />
@@ -497,20 +420,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="利用随机数生成随机数" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api-passenger/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/internal-commer/src/main/java/com/csc/internalcommer/CommerStatusEeum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -518,11 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,16 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server-verificationcode/src/main/java/com/csc/controller/NumberCodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/internal-commer/src/main/java/com/csc/InternalCommerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -557,17 +455,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server-verificationcode/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/../repository/com/alibaba/cloud/spring-cloud-alibaba-dependencies/2021.1/spring-cloud-alibaba-dependencies-2021.1.pom" />
+    <entry file="file://$PROJECT_DIR$/server-verificationcode/src/test/java/com/csc/ServerVerificationcodeApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/server-verificationcode/src/main/java/com/csc/ServerVerificationcodeApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="125">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commer-internal/src/main/java/com/csc/internalcommer/CommerStatusEeum.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commer-internal/src/main/java/com/csc/response/NumberCodeResponse.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commer-internal/src/main/java/com/csc/dto/ResponseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commer-internal/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-verificationcode/src/main/java/com/csc/controller/NumberCodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="341">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/openfeign/NumberVerificationServeice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -576,7 +534,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/request/VeificationCodeDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="291">
           <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
             <element signature="e#275#276#0" expanded="true" />
@@ -588,79 +546,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/ApiPassengerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="350">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java">
+    <entry file="file://$PROJECT_DIR$/server-verificationcode/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../repository/com/alibaba/cloud/spring-cloud-alibaba-dependencies/2021.1/spring-cloud-alibaba-dependencies-2021.1.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="191" column="6" selection-start-line="191" selection-start-column="6" selection-end-line="191" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-passenger/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server-verificationcode/src/main/java/com/csc/ServerVerificationcodeApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server-verificationcode/src/test/java/com/csc/ServerVerificationcodeApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="100">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server-verificationcode/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="400">
+          <caret line="36" column="21" selection-start-line="31" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
           <folding>
             <element signature="n#build#0;n#project#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/api-passenger/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+        <state relative-caret-position="225">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-passenger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -714,7 +645,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>FeiDiChuXing</last-edited>
+          <last-edited>commerinternal</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
