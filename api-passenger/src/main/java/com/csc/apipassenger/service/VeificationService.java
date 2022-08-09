@@ -2,6 +2,7 @@ package com.csc.apipassenger.service;
 
 import com.csc.apipassenger.openfeign.NumberVerificationServeice;
 import com.csc.dto.ResponseResult;
+import com.csc.response.NumberCodeResponse;
 import jdk.nashorn.internal.runtime.JSONFunctions;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,12 +30,14 @@ public class VeificationService {
 
     // 接收手机号 调用验证码服务,获取验证码 返回 验证码
     public ResponseResult generatorCode(String passengerPhone){
-        ResponseResult responseResult = numberVerificationServeice.numberCode(6);
-        String s = responseResult.getData().toString();
-        //设置key和value 存储时间
-        stringRedisTemplate.opsForValue().set(verificationCode+passengerPhone,s,2, TimeUnit.MINUTES);
 
-        return ResponseResult.success() ;
+        ResponseResult responseResult = numberVerificationServeice.numberCode(6);
+        Object data = responseResult.getData();
+        System.out.println(data);
+        //设置key和value 存储时间
+        stringRedisTemplate.opsForValue().set(verificationCode+passengerPhone,data.toString(),2, TimeUnit.MINUTES);
+        ResponseResult success = ResponseResult.success();
+        return success;
     }
 
 }

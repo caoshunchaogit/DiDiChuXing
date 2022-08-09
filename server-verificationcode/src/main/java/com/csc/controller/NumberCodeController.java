@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Objects;
+
 /**
  * @program: 这是测试类
  * @description:
@@ -21,11 +23,11 @@ public class NumberCodeController {
 
         double d = (Math.random() * 9 + 1) * Math.pow(10,size-1);
         int code = (int) d;
-
         //定义返回值
         NumberCodeResponse num = new NumberCodeResponse();
         num.setNumberCode(code);
-
-        return ResponseResult.success(num);
+        ResponseResult<Object> objectResponseResult = new ResponseResult<>();
+        objectResponseResult.setData(code);
+        return objectResponseResult;
     }
 }
