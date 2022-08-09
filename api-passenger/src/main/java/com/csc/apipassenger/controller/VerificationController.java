@@ -24,7 +24,6 @@ public class VerificationController {
     public ResponseResult verificationCode(@RequestBody VeificationCodeDTO veificationCodeDTO){
 
         String code = veificationCodeDTO.getPassengerPhone();
-        System.out.println("接收到的手机号参数:" + code);
         return veificationService.generatorCode(code);
 
     }

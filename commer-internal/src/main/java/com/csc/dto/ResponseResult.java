@@ -18,6 +18,9 @@ public class ResponseResult<T> {
     private String message;
     private T data;
 
+    public static <T> ResponseResult success(){
+        return new ResponseResult().setCode(CommerStatusEeum.SUCCESS.getCode()).setMessage(CommerStatusEeum.SUCCESS.getValue());
+    }
 
     //成功响应的方法
     public static <T> ResponseResult success(T data){
