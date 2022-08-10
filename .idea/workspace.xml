@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80d71853-a63a-4fbd-82da-46635db514cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/openfeign/UserPassenget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/ServicePassengerUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/dto/PassengerUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/mapper/PassengerUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/request/VeificationCodeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/request/VeificationCodeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/service/VeificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/service/VeificationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/dto/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/dto/ResponseResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/internalcommer/CommerStatusEeum.java" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/internalcommer/CommerStatusEeum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/dto/ResponseResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/dto/ResponseResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/internalcommer/CommerStatusEeum.class" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/internalcommer/CommerStatusEeum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-verificationcode/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="80d71853-a63a-4fbd-82da-46635db514cb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +67,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/commer-internal/src/main/java/com/csc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sql" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -250,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660125623622</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="查看乘客是否存在,不存在时注册---通过api-passenger调用">
+      <created>1660136621932</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660136621932</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +274,7 @@
     <MESSAGE value="远程调用服务" />
     <MESSAGE value="把验证码存入Redis中" />
     <MESSAGE value="编写检验验证码的骨架" />
-    <option name="LAST_COMMIT_MESSAGE" value="编写检验验证码的骨架" />
+    <MESSAGE value="查看乘客是否存在,不存在时注册---通过api-passenger调用" />
+    <option name="LAST_COMMIT_MESSAGE" value="查看乘客是否存在,不存在时注册---通过api-passenger调用" />
   </component>
 </project>
