@@ -1,5 +1,7 @@
 package com.csc.apipassenger.request;
 
+import lombok.Data;
+
 /**
  * @program: 这是测试类
  * @description:
@@ -7,14 +9,9 @@ package com.csc.apipassenger.request;
  * @create: 2022-08-06 10:56
  **/
 
+@Data
 public class VeificationCodeDTO {
     private String passengerPhone;
 
-    public String getPassengerPhone() {
-        return passengerPhone;
-    }
-
-    public void setPassengerPhone(String passengerPhone) {
-        this.passengerPhone = passengerPhone;
-    }
+    private String verificationCode;
 }

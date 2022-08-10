@@ -5,6 +5,7 @@ import com.csc.apipassenger.service.VeificationService;
 import com.csc.dto.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,4 +28,16 @@ public class VerificationController {
         return veificationService.generatorCode(code);
 
     }
+
+    @PostMapping("/verification-code-check")
+    public ResponseResult checkCode(@RequestBody VeificationCodeDTO veificationCodeDTO){
+
+        String passengerPhone = veificationCodeDTO.getPassengerPhone();
+        String verificationCode = veificationCodeDTO.getVerificationCode();
+
+        System.out.println("手机号:"+passengerPhone + "验证码:"+verificationCode);
+
+        return veificationService.checkCode(passengerPhone,verificationCode);
+    }
+
 }

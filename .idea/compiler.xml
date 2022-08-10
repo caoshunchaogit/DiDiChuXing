@@ -10,6 +10,7 @@
         <module name="api-passenger" />
         <module name="server-verificationcode" />
         <module name="apipassenger" />
+        <module name="commer-internal" />
         <module name="commerinternal" />
       </profile>
     </annotationProcessing>
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-passenger" options="-parameters" />
       <module name="apipassenger" options="-parameters" />
+      <module name="commer-internal" options="-parameters" />
       <module name="commerinternal" options="-parameters" />
       <module name="internal-commer" options="" />
       <module name="server-verificationcode" options="-parameters" />
