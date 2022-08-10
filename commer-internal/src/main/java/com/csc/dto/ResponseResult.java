@@ -19,12 +19,14 @@ public class ResponseResult<T> {
     private T data;
 
     public static <T> ResponseResult success(){
-        return new ResponseResult().setCode(CommerStatusEeum.SUCCESS.getCode()).setMessage(CommerStatusEeum.SUCCESS.getValue());
+        return new ResponseResult().setCode(CommerStatusEeum.SUCCESS.getCode())
+                .setMessage(CommerStatusEeum.SUCCESS.getValue());
     }
 
     //成功响应的方法
     public static <T> ResponseResult success(T data){
-        return new ResponseResult().setCode(CommerStatusEeum.SUCCESS.getCode()).setData(data).setMessage(CommerStatusEeum.SUCCESS.getValue());
+        return new ResponseResult().setCode(CommerStatusEeum.SUCCESS.getCode()).setData(data)
+                .setMessage(CommerStatusEeum.SUCCESS.getValue());
     }
 
     //失败响应的方法

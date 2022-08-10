@@ -1,8 +1,8 @@
 package com.csc.apipassenger.controller;
 
-import com.csc.apipassenger.request.VeificationCodeDTO;
 import com.csc.apipassenger.service.VeificationService;
 import com.csc.dto.ResponseResult;
+import com.csc.request.VeificationCodeDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

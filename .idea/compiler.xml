@@ -7,15 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-passenger" />
         <module name="server-verificationcode" />
-        <module name="apipassenger" />
-        <module name="commer-internal" />
+        <module name="api-passenger" />
         <module name="commerinternal" />
+        <module name="servicepassengeruser" />
+        <module name="commer-internal" />
+        <module name="apipassenger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="internal-commer" target="1.8" />
+      <module name="passenger-user" target="1.8" />
+      <module name="service-passenger-user" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -25,7 +28,10 @@
       <module name="commer-internal" options="-parameters" />
       <module name="commerinternal" options="-parameters" />
       <module name="internal-commer" options="" />
+      <module name="passenger-user" options="-parameters" />
       <module name="server-verificationcode" options="-parameters" />
+      <module name="service-passenger-user" options="-parameters" />
+      <module name="servicepassengeruser" options="-parameters" />
     </option>
   </component>
 </project>

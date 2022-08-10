@@ -1,16 +1,21 @@
 package com.csc.apipassenger.service;
 
 import com.csc.apipassenger.openfeign.NumberVerificationServeice;
+import com.csc.apipassenger.openfeign.UserPassenget;
 import com.csc.dto.ResponseResult;
+import com.csc.internalcommer.CommerStatusEeum;
+import com.csc.request.VeificationCodeDTO;
 import com.csc.response.NumberCodeResponse;
 import com.csc.response.TokenResponse;
 import jdk.nashorn.internal.runtime.JSONFunctions;
 import net.sf.json.JSONObject;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.sound.midi.Soundbank;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -29,6 +34,8 @@ public class VeificationService {
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
+    @Autowired
+    private UserPassenget userPassenget;
 
 
     /**
@@ -44,27 +51,47 @@ public class VeificationService {
         Object data = responseResult.getData();
         System.out.println(data);
         //设置key和value 存储时间
-        stringRedisTemplate.opsForValue().set(verificationCode+passengerPhone,data.toString(),2, TimeUnit.MINUTES);
+        stringRedisTemplate.opsForValue().set(generatorCodeByPhone(passengerPhone),data.toString(),2, TimeUnit.MINUTES);
         ResponseResult success = ResponseResult.success();
         return success;
     }
 
     /**
-     * @author Tonny  谣言
+     * @author Tonny
+     * @Param 根据手机号生成Redis的kry
+     * @return key
+     * @date 2022/8/10 18:03
+     */
+    private String generatorCodeByPhone(String passengerPhone){
+        return verificationCode + passengerPhone;
+    }
+
+
+    /**
+     * @author Tonny  校验
      * @Param passengerPhone 接收的手机号 verificationCode 接收的验证码
      * @return token
      * @date 2022/8/10 17:41
      */
     public ResponseResult checkCode(String passengerPhone,String verificationCode){
 
-        System.out.println("手机号:"+passengerPhone + "验证码:"+verificationCode);
 
-        System.out.println("根据手机号在redis中查找");
+        String code = stringRedisTemplate.opsForValue().get(generatorCodeByPhone(passengerPhone));
+        System.out.println("Redis中的用户:" + code);
 
-        System.out.println("校验验证码");
+        //验证码校验
+        if(StringUtils.isBlank(code)){
+            //验证码不存在时的返回
+            return ResponseResult.fail(CommerStatusEeum.VERIFICATION_CODE_ERROR.getCode()
+                    ,CommerStatusEeum.VERIFICATION_CODE_ERROR.getValue());
+        }
+        if(!Objects.equals(verificationCode.trim(),code.trim())){
+            return ResponseResult.fail(CommerStatusEeum.VERIFICATION_CODE_ERROR.getCode()
+                    ,CommerStatusEeum.VERIFICATION_CODE_ERROR.getValue());
+        }
 
         System.out.println("判断原来是否有用户");
-
+        userPassenget.loginOrRegister(new VeificationCodeDTO().setPassengerPhone(passengerPhone));
         System.out.println("颁发令牌");
 
         TokenResponse tokenResponse = new TokenResponse();

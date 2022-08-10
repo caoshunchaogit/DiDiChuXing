@@ -9,11 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-
-    <artifactId>api-passenger</artifactId>
+    <artifactId>service-passenger-user</artifactId>
 
     <dependencies>
-        <!--springboot web的依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -36,16 +34,19 @@
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
         </dependency>
 
-
-
-
-        <!--Redsi的依赖-->
+        <!--mybatis-puls-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.3.1</version>
         </dependency>
-
-
+        <!--mysql的驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
     </dependencies>
+
+
 
 </project>

@@ -2,17 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80d71853-a63a-4fbd-82da-46635db514cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DiDiChuXing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/response/TokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/openfeign/UserPassenget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/ServicePassengerUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/dto/PassengerUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/mapper/PassengerUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/csc/passengeruser/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/controller/VerificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/request/VeificationCodeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/request/VeificationCodeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/request/VeificationCodeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/request/VeificationCodeDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/csc/apipassenger/service/VeificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/META-INF/api-passenger.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/controller/VerificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/controller/VerificationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/request/VeificationCodeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/request/VeificationCodeDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/service/VeificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/csc/apipassenger/service/VeificationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/dto/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/dto/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/internalcommer/CommerStatusEeum.java" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/src/main/java/com/csc/internalcommer/CommerStatusEeum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/dto/ResponseResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/dto/ResponseResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/internalcommer/CommerStatusEeum.class" beforeDir="false" afterPath="$PROJECT_DIR$/commer-internal/target/classes/com/csc/internalcommer/CommerStatusEeum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-verificationcode/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +55,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -94,6 +108,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.csc.request" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\DiDiChuXing\commer-internal\src\main\java\com\csc" />
     </key>
@@ -124,26 +141,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiPassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="apipassenger" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.csc.apipassenger.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.csc.apipassenger.ApiPassengerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InternalCommerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="internal-commer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.csc.InternalCommerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServerVerificationcodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="server-verificationcode" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.csc.ServerVerificationcodeApplication" />
@@ -151,16 +148,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServicePassengerUserApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="servicepassengeruser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csc.passengeruser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.csc.passengeruser.ServicePassengerUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Spring Boot.InternalCommerApplication" />
       <item itemvalue="Spring Boot.ServerVerificationcodeApplication" />
-      <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication (1)" />
+      <item itemvalue="Spring Boot.ServicePassengerUserApplication (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ApiPassengerApplication (1)" />
-        <item itemvalue="Spring Boot.ApiPassengerApplication" />
+        <item itemvalue="Spring Boot.ServicePassengerUserApplication (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660056110585</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="编写检验验证码的骨架">
+      <created>1660125623622</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660125623622</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,90 +291,7 @@
     <MESSAGE value="利用随机数生成随机数" />
     <MESSAGE value="远程调用服务" />
     <MESSAGE value="把验证码存入Redis中" />
-    <option name="LAST_COMMIT_MESSAGE" value="把验证码存入Redis中" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>commerinternal</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <MESSAGE value="编写检验验证码的骨架" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写检验验证码的骨架" />
   </component>
 </project>
