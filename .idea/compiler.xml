@@ -12,13 +12,13 @@
         <module name="commerinternal" />
         <module name="servicepassengeruser" />
         <module name="commer-internal" />
+        <module name="service-passenger-user" />
         <module name="apipassenger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="internal-commer" target="1.8" />
       <module name="passenger-user" target="1.8" />
-      <module name="service-passenger-user" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

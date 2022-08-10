@@ -32,6 +32,13 @@
             <classifier>jdk15</classifier>
         </dependency>
 
+        <!--token生成-->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+
         <!--返回类的服务-->
         <dependency>
             <groupId>com.csc</groupId>

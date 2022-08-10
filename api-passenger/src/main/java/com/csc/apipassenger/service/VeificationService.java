@@ -4,9 +4,11 @@ import com.csc.apipassenger.openfeign.NumberVerificationServeice;
 import com.csc.apipassenger.openfeign.UserPassenget;
 import com.csc.dto.ResponseResult;
 import com.csc.internalcommer.CommerStatusEeum;
+import com.csc.internalcommer.IdentityConstant;
 import com.csc.request.VeificationCodeDTO;
 import com.csc.response.NumberCodeResponse;
 import com.csc.response.TokenResponse;
+import com.csc.util.JwtUtils;
 import jdk.nashorn.internal.runtime.JSONFunctions;
 import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
@@ -75,10 +77,7 @@ public class VeificationService {
      */
     public ResponseResult checkCode(String passengerPhone,String verificationCode){
 
-
         String code = stringRedisTemplate.opsForValue().get(generatorCodeByPhone(passengerPhone));
-        System.out.println("Redis中的用户:" + code);
-
         //验证码校验
         if(StringUtils.isBlank(code)){
             //验证码不存在时的返回
@@ -89,13 +88,13 @@ public class VeificationService {
             return ResponseResult.fail(CommerStatusEeum.VERIFICATION_CODE_ERROR.getCode()
                     ,CommerStatusEeum.VERIFICATION_CODE_ERROR.getValue());
         }
-
-        System.out.println("判断原来是否有用户");
+        //给乘客注册表注册用户
         userPassenget.loginOrRegister(new VeificationCodeDTO().setPassengerPhone(passengerPhone));
-        System.out.println("颁发令牌");
+
+        String token = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY);
 
         TokenResponse tokenResponse = new TokenResponse();
-        tokenResponse.setToken("token value");
+        tokenResponse.setToken(token);
 
         return ResponseResult.success(tokenResponse);
     }

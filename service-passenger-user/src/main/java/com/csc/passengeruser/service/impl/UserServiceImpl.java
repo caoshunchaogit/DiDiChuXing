@@ -26,14 +26,12 @@ public class UserServiceImpl implements UserService {
         Map<String,Object> map = new HashMap<>();
         map.put("passenger_phone",passengerPhone);
         List<PassengerUser> passengerUsers = passengerUserMapper.selectByMap(map);
-
         //判断用户是否存在
         if(passengerUsers.size() == 0){
             //设置一个新的注册用户
             PassengerUser user = new PassengerUser().setGmtCreate(LocalDateTime.now())
                     .setGmtModified(LocalDateTime.now()).setPassengerGender((byte) 0).setPassengerName("张三")
                     .setPassengerPhone(passengerPhone).setState((byte) 0);
-
             passengerUserMapper.insert(user);
         }
 
