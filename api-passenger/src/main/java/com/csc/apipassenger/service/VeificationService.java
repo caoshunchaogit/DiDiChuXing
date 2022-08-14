@@ -9,6 +9,7 @@ import com.csc.request.VeificationCodeDTO;
 import com.csc.response.NumberCodeResponse;
 import com.csc.response.TokenResponse;
 import com.csc.util.JwtUtils;
+import com.csc.util.RedisKeyPerfixUtil;
 import jdk.nashorn.internal.runtime.JSONFunctions;
 import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
@@ -32,7 +33,6 @@ public class VeificationService {
     @Autowired
     private NumberVerificationServeice numberVerificationServeice;
 
-    private String verificationCode = "passenger-verification-code-";
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
@@ -53,20 +53,12 @@ public class VeificationService {
         Object data = responseResult.getData();
         System.out.println(data);
         //设置key和value 存储时间
-        stringRedisTemplate.opsForValue().set(generatorCodeByPhone(passengerPhone),data.toString(),2, TimeUnit.MINUTES);
-        ResponseResult success = ResponseResult.success();
+        stringRedisTemplate.opsForValue().set(RedisKeyPerfixUtil.generatorCodeByPhone(passengerPhone),
+                data.toString(),2, TimeUnit.MINUTES);
+        ResponseResult success = ResponseResult.success(data);
         return success;
     }
 
-    /**
-     * @author Tonny
-     * @Param 根据手机号生成Redis的kry
-     * @return key
-     * @date 2022/8/10 18:03
-     */
-    private String generatorCodeByPhone(String passengerPhone){
-        return verificationCode + passengerPhone;
-    }
 
 
     /**
@@ -77,7 +69,7 @@ public class VeificationService {
      */
     public ResponseResult checkCode(String passengerPhone,String verificationCode){
 
-        String code = stringRedisTemplate.opsForValue().get(generatorCodeByPhone(passengerPhone));
+        String code = stringRedisTemplate.opsForValue().get(RedisKeyPerfixUtil.generatorCodeByPhone(passengerPhone));
         //验证码校验
         if(StringUtils.isBlank(code)){
             //验证码不存在时的返回
@@ -90,11 +82,30 @@ public class VeificationService {
         }
         //给乘客注册表注册用户
         userPassenget.loginOrRegister(new VeificationCodeDTO().setPassengerPhone(passengerPhone));
+        //生成accessToken和refreToken的kty
+        String accessKey = RedisKeyPerfixUtil.generatorKey(passengerPhone,IdentityConstant.PASSENGER_IDENTITY,IdentityConstant.ACCESSTOKEN);
+        String refreshKey = RedisKeyPerfixUtil.generatorKey(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, IdentityConstant.REFRESHTOKEN);
+        //生成accessToken和refreToken
+        String accessToken = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, IdentityConstant.ACCESSTOKEN);
+        String refreshToken = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, IdentityConstant.REFRESHTOKEN);
 
-        String token = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY);
+        //把token存到redis中30天
+        stringRedisTemplate.opsForValue()
+                .set(accessKey,accessToken,30,TimeUnit.DAYS);
+        //把token存到redis中31天
+        stringRedisTemplate.opsForValue()
+                .set(refreshKey,refreshToken,31,TimeUnit.DAYS);
+
+//        //把token存到redis中30天
+//        stringRedisTemplate.opsForValue()
+//                .set(accessKey,accessToken,20,TimeUnit.SECONDS);
+//        //把token存到redis中31天
+//        stringRedisTemplate.opsForValue()
+//                .set(refreshKey,refreshToken,50,TimeUnit.SECONDS);
 
         TokenResponse tokenResponse = new TokenResponse();
-        tokenResponse.setToken(token);
+        tokenResponse.setAccessToken(accessToken);
+        tokenResponse.setRefreshToken(refreshToken);
 
         return ResponseResult.success(tokenResponse);
     }

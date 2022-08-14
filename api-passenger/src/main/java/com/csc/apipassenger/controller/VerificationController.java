@@ -21,6 +21,13 @@ public class VerificationController {
     @Autowired
     private VeificationService veificationService;
 
+
+    /**
+     * @author Tonny
+     * @Param 通过手机号，获取验证码
+     * @return
+     * @date  12:27
+     */
     @GetMapping("/verification-code")
     public ResponseResult verificationCode(@RequestBody VeificationCodeDTO veificationCodeDTO){
 
@@ -29,6 +36,12 @@ public class VerificationController {
 
     }
 
+    /**
+     * @author Tonny
+     * @Param 通过手机号和验证码校验用户是否存在 不存在存到乘客信息中
+     * @return 返回token
+     * @date  12:27
+     */
     @PostMapping("/verification-code-check")
     public ResponseResult checkCode(@RequestBody VeificationCodeDTO veificationCodeDTO){
 

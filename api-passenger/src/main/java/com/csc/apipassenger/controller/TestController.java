@@ -26,7 +26,7 @@ public class TestController {
         return ResponseResult.success("auth test");
     }
 
-    @GetMapping("/authTest")
+    @GetMapping("/noAutoTest")
     public ResponseResult noAutoTest(){
 
         return ResponseResult.success("noauth test");
