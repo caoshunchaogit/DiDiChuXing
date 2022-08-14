@@ -16,4 +16,6 @@ public class TokenResult {
 
     private String identity;
 
+    private String tokenType;
+
 }

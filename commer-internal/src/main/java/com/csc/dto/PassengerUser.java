@@ -1,4 +1,4 @@
-package com.csc.passengeruser.dto;
+package com.csc.dto;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -22,4 +22,6 @@ public class PassengerUser {
     private byte passengerGender;
 
     private byte state;
+
+    private String profilePhoto;
 }
