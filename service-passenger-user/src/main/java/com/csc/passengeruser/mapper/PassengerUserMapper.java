@@ -1,7 +1,7 @@
 package com.csc.passengeruser.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.csc.passengeruser.dto.PassengerUser;
+import com.csc.dto.PassengerUser;
 import org.apache.ibatis.annotations.Mapper;
 
 

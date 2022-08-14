@@ -4,9 +4,7 @@ import com.csc.dto.ResponseResult;
 import com.csc.passengeruser.service.UserService;
 import com.csc.request.VeificationCodeDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import sun.dc.pr.PRError;
 
 @RestController
@@ -21,5 +19,11 @@ public class UserController {
         String passengerPhone = veificationCodeDTO.getPassengerPhone();
 
         return userService.loginOrRegister(passengerPhone);
+    }
+
+    @GetMapping("/user/{phone}")
+    public ResponseResult getUsre(@PathVariable("phone") String phone ){
+        System.out.println("123");
+        return userService.getUser(phone);
     }
 }
